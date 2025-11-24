@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mensaje especial</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .player {background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 12px; backdrop-filter: blur(2px);} 
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <main class="container">
+      <h1 class="title glow">Mensaje especial</h1>
+      <section class="card player" aria-label="Reproductor de audio">
+        <p>Hay alguien que te ha querido mandar un mensaje. Pulsa el botón para escucharlo.</p>
+        <audio id="audio" controls preload="metadata" style="width:100%">
+          <source src="assets/mensajeL.mp3" type="audio/mpeg" />
+          Tu navegador no puede reproducir el audio. Descárgalo <a href="assets/mensaje.mp3" download>desde aquí</a>.
+        </audio>
+        <div class="actions" style="margin-top:1rem">
+          <a class="button" href="index.html" aria-label="Volver a la carta">⟵ Volver</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+  </div>
+</body>
+</html>
